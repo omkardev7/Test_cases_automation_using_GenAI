@@ -94,7 +94,8 @@ def qa_bot(upload_option, uploaded_file):
         return qa
 
     else:
-        db = FAISS.load_local(DB_FAISS_PATH, embeddings)
+        # Allow dangerous deserialization
+        db = FAISS.load_local(DB_FAISS_PATH, embeddings, allow_dangerous_deserialization=True)
         st.sidebar.info("Using existing Vector DB.")
 
         llm = load_llm()
