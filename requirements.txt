@@ -11,3 +11,5 @@ typing_extensions==4.5.0
 pydantic 
 ctransformers
 numpy
+nltk
+rouge-score

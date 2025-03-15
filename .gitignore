@@ -5,3 +5,6 @@ pyLLM
 llama-2-7b-chat.ggmlv3.q4_K_S.bin
 Khade
 llama-2-7b-chat.Q4_0.gguf
+__pycache__
+.env
+vectorstore/db_faiss
